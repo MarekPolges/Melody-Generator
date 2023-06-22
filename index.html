@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PROJECTS/PROJEKT MELODY/bootstrap.css">
+    <title>MELODY GENERATOR</title>
+</head>
+
+<body class="custom-background">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1>Melody Generator</h1>
+            </div>
+            <div class="col-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                    <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                    <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                    <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+                    <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                    <path fill-rule="evenodd" d="M9 3v10H8V3h1z"/>
+                    <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+        <div class="container-fluid rounded">
+            <div class="card">
+                <div class="card-body">
+                    <p>Welcome to the melody generator. Pick a key & signature and click the button to generate and hear your melody. Enjoy!</p>
+                </div>
+            </div>
+        </div>
+  
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mb-3">
+                <div class="form-group shadow p-1 mb-2 rounded">
+                    <label for="keySelect">select key:</label>
+                    <select class="form-control" id="keySelect">
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+                </div>
+                <div class="form-group shadow p-1 mb-2 rounded">
+                    <label for="signatureSelect">select signature:</label>
+                    <select class="form-control" id="signatureSelect">
+                        <option value="4/4">4/4</option>
+                        <option value="3/4">3/4</option>
+                        <option value="6/8">6/8</option>
+                    </select>
+                </div>
+                <div class="form-group" hidden>
+                    <label for="chordSelect">UNCLEAR? KEEP THIS? Select Chord Progression:</label>
+                    <select class="form-control" id="chordSelect">
+                        <option value="I-IV-V">I - IV - V</option>
+                        <option value="ii-V-I">ii - V - I</option>
+                        <option value="vi-IV-I-V">vi - IV - I - V</option>
+                    </select>
+                </div>
+            </div>           
+         
+        <div class="container-fluid">
+            
+        <div id="overview">
+            <h4>Selected Options:</h4>
+            <p><strong>Key:</strong> <span id="selectedKey"></span></p>
+            <p><strong>Signature:</strong> <span id="selectedSignature"></span></p>
+            <span hidden>
+                <p><strong>Chord Progression:</strong> <span id="selectedChordProgression"></span></p>
+            </span>
+        </div>
+
+    </div>  
+
+        <div class="row mb-3">
+            <div class="text-center mt-3">
+                <button type="button" class="custom-button" id="generateBtn">Generate Melody</button>
+            </div>
+        </div>
+       
+    <div class="row mb-4">
+        <div class="boo">
+            <div class="vexbox">
+                <h4>your melody:</h4>
+            <div class="col mb-5" id="melodyContainer">
+        </div>
+    </div>
+   
+            <div id="sheetMusicContainer"></div>
+        </div>
+    </div>
+</div>
+
+ 
+    <script src="jquery-3.7.0.js"></script>
+    <script src="melodyscript.js"></script>
+
+</body>
+
+</html>
+
