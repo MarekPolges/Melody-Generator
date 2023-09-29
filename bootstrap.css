@@ -19,6 +19,7 @@
 * {
   font-family: 'modesevenregular';
   color: rgb(26, 24, 24); 
+
 }
 
 .card-body {
@@ -29,7 +30,7 @@
 }
 
 .custom-background {
-  background-color: rgb(165, 204, 226)
+  background-color: rgb(165, 204, 226);
   color: white; 
 }
 
@@ -38,9 +39,7 @@
 }
 
 .custom-background {
-  background-color: #0b1b3d;
->>>>>>> origin/main
-  
+  background-color: rgb(165, 204, 226); 
 }
 
 .custom-button {
