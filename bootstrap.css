@@ -30,7 +30,6 @@
 
 .custom-background {
   background-color: rgb(165, 204, 226)
-=======
   color: white; 
 }
 
@@ -48,11 +47,7 @@
   display: block;
   width: 100%;
   padding: 10px 20px;
-<<<<<<< HEAD
   background-color:#f3e03b;
-=======
-  background-color:#ffc567;
->>>>>>> origin/main
   color: #161111;
   text-align: center;
   text-decoration: none;
